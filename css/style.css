@@ -646,7 +646,7 @@ align-items: baseline;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color:  #2e2f42;
-  color:var(--white)
+  color:var(--white);
   padding-left: 16px;
 }
 .footer-input::placeholder{
@@ -667,8 +667,11 @@ align-items: baseline;
   padding: 8px 24px 8px 24px;
   color: white;
 }
-
-
+footer-form11{
+  display: flex;
+  display-direction: column;
+  
+}
 
 
 
