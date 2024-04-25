@@ -862,4 +862,72 @@ transition: fill var(--timimg-function);
 .modal-textarea:focus {
   border-color: #4d5ae5;
 }
+.modal-btn-submit {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--timimg-function);
+}
+.modal-btn-submit:hover,
+.modal-btn-submit:focus {
+  background-color: #404bbf;
+}
+.user-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+
+}
+.user-policy-link {
+  color: #4d5ae5;
+}
+
+.user-policy-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color var(--timimg-function), border var(--timimg-function), fill var(--timimg-function);
+}
+.user-policy-input:checked + .user-policy-icon {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+} 
+
+.modal-check:checked + .modal-label-check::before {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.modal-check {
+  margin-bottom: 24px;
+
+}
 
