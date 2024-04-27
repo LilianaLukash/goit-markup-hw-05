@@ -622,11 +622,10 @@ align-items: baseline;
   margin-right: 80px;
 }
 .footer-form {
-  
+  display: flex;
+  gap: 24px;
 }
-.footer-three{
-  
-}
+
 
 .footer-label {
   font-family: var(--font-family);
@@ -660,21 +659,34 @@ align-items: baseline;
 }
 .footer-btn {
   border-radius: 4px;
-  padding: 8px 24px;
+  
   width: 165px;
   height: 40px;
   background: #4d5ae5;
-  padding: 8px 24px 8px 24px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  
   color: white;
 }
-footer-form11{
+
+.button-span {
   display: flex;
-  display-direction: column;
-  
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background: #404bbf;
 }
 
 
+.footer-icon {
+  margin-left: 16px;  
+  fill: white;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
 
 .social-footer-links {
   display: flex;
@@ -784,10 +796,7 @@ background-color: #31d0aa;
   fill: var(--white);
 }
 
-.icon-modal {
-transition: fill var(--timimg-function);
-  fill: #2e2f42; /* Колір іконки */
-}
+
 
 .modal-field {
   display: flex;
@@ -828,7 +837,13 @@ transition: fill var(--timimg-function);
   position: relative;
 }
 
+.input-icon {
+  fill: var(--grey)
+}
 .modal-input-icon {
+    
+  fill: #2e2f42; /* Колір іконки */ 
+  
   position: absolute;
   top: 50%;
   left: 16px;
@@ -837,7 +852,7 @@ transition: fill var(--timimg-function);
 }
 
 .modal-input:focus {
-  border-color: #4d5ae5;
+  border-color: #4550cc;
 }
 .modal-input:focus + .modal-input-icon {
   fill: #4d5ae5;
@@ -868,9 +883,9 @@ transition: fill var(--timimg-function);
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
-padding: 16px 32px;
-width: 169px;
-height: 56px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
   padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
@@ -931,3 +946,9 @@ height: 56px;
 
 }
 
+.input-class:checked + .label-class > .span-class {
+  background-color: #404BBF;
+  border: none;
+  fill: #FFFFFF;
+  border-color: #404BBF;
+}
