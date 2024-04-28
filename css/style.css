@@ -919,6 +919,7 @@ background-color: #31d0aa;
 }
 
 .user-policy-icon {
+  display: inline;
   margin-right: 8px;
   width: 16px;
   height: 16px;
@@ -933,22 +934,33 @@ background-color: #31d0aa;
 .user-policy-input:checked + .user-policy-icon {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  
 } 
 
-.modal-check:checked + .modal-label-check::before {
+.modal-label-check {
+  display: inline-block;
+  
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+} 
+
+
+
+
+.modal-check:checked + .modal-label-check > .user-policy-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+  border-color: #404BBF;
 }
 .modal-check {
   margin-bottom: 24px;
 
 }
 
-.input-class:checked + .label-class > .span-class {
-  background-color: #404BBF;
-  border: none;
-  fill: #FFFFFF;
-  border-color: #404BBF;
+
+.icon-check {
+  fill: #f4f4fd;
 }
