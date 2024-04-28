@@ -946,9 +946,6 @@ background-color: #31d0aa;
   color: #757575;
 } 
 
-
-
-
 .modal-check:checked + .modal-label-check > .user-policy-icon {
   background-color: #404bbf;
   border: none;
